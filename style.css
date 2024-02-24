@@ -216,7 +216,7 @@ h3 {
         right: -350px;
         top: 0;
         width: 350px;
-        background-color:#2f00ff;
+        background-color: grey;
         visibility: hidden;
         transition: transform .5s, visibility .5s;
     }
