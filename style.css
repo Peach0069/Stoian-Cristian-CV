@@ -77,7 +77,7 @@ h3 {
     height: 3px;
     left: 5px;
     background-color: black;
-    transition: background-color .3s, opacity .35s, transform .75s;
+    transition: background-color .3s, opacity .20s, transform .75s;
 }
 
 .header__burger-btn:hover span {
@@ -216,7 +216,7 @@ h3 {
         right: -350px;
         top: 0;
         width: 350px;
-        background-color: grey;
+        background-color: gray;
         visibility: hidden;
         transition: transform .5s, visibility .5s;
     }
