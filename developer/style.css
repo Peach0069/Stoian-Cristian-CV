@@ -1,0 +1,412 @@
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  padding-bottom: 160px;
+  flex: 50%;
+}
+
+.column1 {
+  flex: 50%;
+  background-position: center;
+  background-image: url("media/me.JPG");
+  background-size: cover;
+}
+
+.fa {
+  text-align: center;
+  font-size: 30px;
+  width: 30px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-gituhb {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  border-left: 8px solid #4c83b6;
+  border-right: 8px solid #4c83b6;
+  padding-left: 15px;
+  padding-right: 15px;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*  */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  display: block;
+}
+
+.logoIMG {
+  width: 200px;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menuLink {
+  font-size: 16px;
+}
+
+.headerBurger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.headerBurger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+  transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.headerBurger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.headerBurger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header.open .headerBurger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .headerBurger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .headerBurger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+.header.open .headerBurger-btn span {
+  background-color: white;
+}
+
+
+
+/*  */
+@media (max-width: 1023px) {
+  .headerBurger-btn {
+    display: flex ;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    left: -350px;
+    top: 0;
+    width: 350px;
+    background-color: rgb(157, 140, 255);
+    padding: 75px 20px 20px 20px;
+    transition: transform .5s;
+}
+.menuList {
+    display: block;
+}
+.menuLink {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 10px 0;
+}
+.header.open .menu {
+    transform: translateX(100%);
+}
+  .contactName,
+  .contactEmail,
+  .contactSubject,
+  .contactMessage {
+    white-space: pre-line
+  }
+
+  #contacteaza {
+    padding: 40px 100px 0 30px;
+  }
+
+}
+
+.wrapper{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.buttons{
+  height: 27px;
+}
+
+.buttons:hover{
+  cursor: pointer;
+}
+
+.delete_btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.delete_btn img {
+  width: 25px; /* ajustați dimensiunea imaginii după necesitate */
+  height: auto; /* menține proporțiile imaginii */
+}
+
+
+
+
+@media (min-width: 1024px) {
+  html {
+    border-left: 175px solid #4c83b6;
+    border-right: 175px solid #4c83b6;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .service_page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .antet {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  .portofoliu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  #copyright {
+    text-align: center;
+    width: 100%;
+  }
+
+  .insign {
+    padding: 15px 15px 15px 15px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 3px;
+    box-shadow: 0, 5px 1px;
+    font-weight: bold;
+  }
+
+  .contact_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  #contacteaza {
+    padding: 45px 0 0 50px
+  }
+
+  #contactMessage {
+    display: flex;
+  }
+
+
+
+}
+
+.logo {
+  width: 35px;
+  height: 45px;
+}
+
+
+
+.name {
+  padding-top: 250px;
+  font-size: 30px;
+  padding-right: 50%;
+}
+
+.skills {
+  color: gray;
+  font-size: 20px;
+
+}
+
+.color_set {
+  background-color: #f5f5db;
+  padding: 15px 25px 15px 25px;
+}
+
+.antet {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+
+
+
+.service_article {
+
+  color: rgb(27, 27, 27);
+}
+
+.insign {
+  border-top: 1px solid grey;
+  font-weight: bold;
+}
+
+.break_line {
+  border-top: 1px solid grey;
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  font-weight: bold;
+}
+
+.contact_main {
+  background-color: #f5f5db;
+}
+
+
+.contact_form {
+  padding: 30px 0 30px 50px;
+}
+
+#contactName input {
+  width: 250px;
+}
+
+#contactEmail input {
+  width: 250px;
+}
+
+#contactSubject select {
+  width: 252px;
+}
+
+hr {
+  display: block;
+  border: 1px inset;
+
+
+}
+
+#contactMessage textarea {
+  width: 252px;
+}
+
+#submit {
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  background-color: #4c83b6;
+  color: white;
+  border-radius: 5px;
+  border-color: #4c83b6;
+
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+#footer_logo {
+  width: 50px;
+  height: 70px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#copyright {
+  text-align: center;
+  width: 270px;
+}
